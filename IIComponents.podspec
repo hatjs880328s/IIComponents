@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIComponents'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'IIUIComponents - ui组件库'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,8 @@ IIUIComponents - ui组件库
   s.ios.deployment_target = '8.0'
 
   s.subspec 'IIDatePickerView' do |ss|
-      ss.source_files = 'IIComponents/Classes/IIDatePickerView/*.*'
+      ss.source_files = 'IIComponents/Classes/IIDatePickerView/*{h,m,swift}'
+      ss.resource = 'IIComponents/Classes/IIDatePickerView/*.xib'
   end
 
   s.subspec 'MoreTab' do |ss|
