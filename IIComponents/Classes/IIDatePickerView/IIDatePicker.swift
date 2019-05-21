@@ -8,7 +8,7 @@
 
 import Foundation
 import IIUIAndBizConfig
-import IISwiftBaseUti
+@_exported import IISwiftBaseUti
 
 /*
  此datepicker是在jxh同学基础上做的修改，在此感谢

@@ -9,6 +9,7 @@
 import UIKit
 import IIUIAndBizConfig
 import SnapKit
+@_exported import IISwiftBaseUti
 
 class CustomMoreTabVCell: UITableViewCell {
     //图片
