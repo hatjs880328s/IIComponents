@@ -1,19 +1,19 @@
 PODS:
-  - IIBLL (0.2.3):
-    - IIBLL/BeeHive (= 0.2.3)
-    - IIBLL/IBLL (= 0.2.3)
-  - IIBLL/BeeHive (0.2.3)
-  - IIBLL/IBLL (0.2.3):
-    - IIBLL/BeeHive
-  - IIComponents (0.1.0):
-    - IIComponents/IIDatePickerView (= 0.1.0)
-    - IIComponents/MoreTab (= 0.1.0)
+  - IIComponents (0.1.1):
+    - IIComponents/IIDatePickerView (= 0.1.1)
+    - IIComponents/MoreTab (= 0.1.1)
+    - III18N
+    - IISwiftBaseUti
     - IIUIAndBizConfig
     - SnapKit
-  - IIComponents/IIDatePickerView (0.1.0):
+  - IIComponents/IIDatePickerView (0.1.1):
+    - III18N
+    - IISwiftBaseUti
     - IIUIAndBizConfig
     - SnapKit
-  - IIComponents/MoreTab (0.1.0):
+  - IIComponents/MoreTab (0.1.1):
+    - III18N
+    - IISwiftBaseUti
     - IIUIAndBizConfig
     - SnapKit
   - III18N (0.8.0)
@@ -55,17 +55,7 @@ PODS:
   - IISwiftBaseUti/YYCache (1.3.11):
     - III18N
     - SnapKit (~> 4.2.0)
-  - IIUIAndBizConfig (0.1.4):
-    - IIBLL
-    - IISwiftBaseUti
-    - IIUIAndBizConfig/BizConfig (= 0.1.4)
-    - IIUIAndBizConfig/UIConfig (= 0.1.4)
-  - IIUIAndBizConfig/BizConfig (0.1.4):
-    - IIBLL
-    - IISwiftBaseUti
-  - IIUIAndBizConfig/UIConfig (0.1.4):
-    - IIBLL
-    - IISwiftBaseUti
+  - IIUIAndBizConfig (0.1.7)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
@@ -73,7 +63,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - IIBLL
     - III18N
     - IISwiftBaseUti
     - IIUIAndBizConfig
@@ -84,11 +73,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IIBLL: 056c11f3635555a4bd2b595b95f88955866c6ae8
-  IIComponents: 54122917218048d488a5c674a28543b111c4bd9f
+  IIComponents: 4415f6ebba5cf755a3941fd7b792339ef9792223
   III18N: 89145d37dfb9153c1f6a4243657d07dd8033dc1b
   IISwiftBaseUti: 0f6dbe79e69b319c86996731949b14ed063ad48a
-  IIUIAndBizConfig: 16e133570706887475e3ed0772f00ded24c8faee
+  IIUIAndBizConfig: 7cdc55d0558efabd68b9a8773ad5ee001ad10772
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: 763b258f20b67fde978686f117a6f05a4e652a82

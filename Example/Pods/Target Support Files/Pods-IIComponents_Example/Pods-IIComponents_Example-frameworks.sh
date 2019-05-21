@@ -161,7 +161,6 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/IIBLL/IIBLL.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IIComponents/IIComponents.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/III18N/III18N.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IISwiftBaseUti/IISwiftBaseUti.framework"
@@ -169,7 +168,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/IIBLL/IIBLL.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IIComponents/IIComponents.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/III18N/III18N.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IISwiftBaseUti/IISwiftBaseUti.framework"

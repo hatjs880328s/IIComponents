@@ -291,7 +291,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IIComponents_Example/Pods-IIComponents_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IIBLL/IIBLL.framework",
 				"${BUILT_PRODUCTS_DIR}/IIComponents/IIComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/III18N/III18N.framework",
 				"${BUILT_PRODUCTS_DIR}/IISwiftBaseUti/IISwiftBaseUti.framework",
@@ -300,7 +299,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IIBLL.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IIComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/III18N.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IISwiftBaseUti.framework",

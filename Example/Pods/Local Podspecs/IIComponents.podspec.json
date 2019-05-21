@@ -1,8 +1,8 @@
 {
   "name": "IIComponents",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "IIUIComponents - ui组件库",
-  "description": "IIUIComponents:\nIIUIComponents - ui组件库",
+  "description": "IIUIComponents:\nIIUIComponents - ui组件库\n1.MoreTab\n2.IIDatePickerView",
   "homepage": "https://github.com/hatjs880328s/IIComponents",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IIComponents.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -24,6 +24,12 @@
 
     ],
     "SnapKit": [
+
+    ],
+    "III18N": [
+
+    ],
+    "IISwiftBaseUti": [
 
     ]
   },

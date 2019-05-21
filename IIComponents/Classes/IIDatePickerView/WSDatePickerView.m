@@ -832,7 +832,7 @@ typedef void(^doneBlock)(NSDate *);
 -(void)setDoneButtonColor:(UIColor *)doneButtonColor {
     _doneButtonColor = doneButtonColor;
     self.doneBtn.backgroundColor = doneButtonColor;
-//    [self.doneBtn setTitleColor:APPUIConfig.cloudThemeColor forState:UIControlStateNormal];
+//    [self.doneBtn setTitleColor:APPUIConfigX.cloudThemeColor forState:UIControlStateNormal];
 }
 
 -(void)setHideBackgroundYearLabel:(BOOL)hideBackgroundYearLabel {

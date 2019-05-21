@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIComponents'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'IIUIComponents - ui组件库'
 
 # This description is used to generate tags and improve search results.
@@ -51,4 +51,6 @@ IIUIComponents - ui组件库
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'IIUIAndBizConfig'
   s.dependency 'SnapKit'
+  s.dependency 'III18N'
+  s.dependency 'IISwiftBaseUti'
 end

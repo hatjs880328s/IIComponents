@@ -8,6 +8,7 @@
 
 import Foundation
 import IIUIAndBizConfig
+import IISwiftBaseUti
 
 /*
  此datepicker是在jxh同学基础上做的修改，在此感谢
@@ -28,7 +29,7 @@ class IIDatePicker: NSObject {
         }
         picker?.sureEach10MinsProgress = each10MinsProgress
         picker?.doneButtonColor = UIColor.white
-        picker?.dateLabelColor = APPUIConfig.mainCharColor
+        picker?.dateLabelColor = APPUIConfigX.mainCharColor
         picker?.hideBackgroundYearLabel = true
         
         self.ins = picker
