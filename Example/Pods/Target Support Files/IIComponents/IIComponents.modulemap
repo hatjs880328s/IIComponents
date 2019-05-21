@@ -1,0 +1,6 @@
+framework module IIComponents {
+  umbrella header "IIComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}

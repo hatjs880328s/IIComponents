@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IIComponents_Example' do
+  pod 'IIComponents', :path => '../'
+
+  target 'IIComponents_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
