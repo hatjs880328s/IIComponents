@@ -1,17 +1,17 @@
 PODS:
-  - IIComponents (0.1.4):
-    - IIComponents/IIDatePickerView (= 0.1.4)
-    - IIComponents/MoreTab (= 0.1.4)
+  - IIComponents (0.1.5):
+    - IIComponents/IIDatePickerView (= 0.1.5)
+    - IIComponents/MoreTab (= 0.1.5)
     - III18N
     - IISwiftBaseUti
     - IIUIAndBizConfig
     - SnapKit
-  - IIComponents/IIDatePickerView (0.1.4):
+  - IIComponents/IIDatePickerView (0.1.5):
     - III18N
     - IISwiftBaseUti
     - IIUIAndBizConfig
     - SnapKit
-  - IIComponents/MoreTab (0.1.4):
+  - IIComponents/MoreTab (0.1.5):
     - III18N
     - IISwiftBaseUti
     - IIUIAndBizConfig
@@ -73,7 +73,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IIComponents: fac068570fdb632ff4ca6946b85d499b65d31a2e
+  IIComponents: d08b4403e881436f8eacb5f1dd06669af6d6b5c8
   III18N: 89145d37dfb9153c1f6a4243657d07dd8033dc1b
   IISwiftBaseUti: 0f6dbe79e69b319c86996731949b14ed063ad48a
   IIUIAndBizConfig: 7cdc55d0558efabd68b9a8773ad5ee001ad10772

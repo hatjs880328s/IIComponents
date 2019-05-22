@@ -1,6 +1,6 @@
 {
   "name": "IIComponents",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "IIUIComponents - ui组件库",
   "description": "IIUIComponents:\nIIUIComponents - ui组件库\n1.MoreTab\n2.IIDatePickerView",
   "homepage": "https://github.com/hatjs880328s/IIComponents",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IIComponents.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "8.0"
@@ -36,9 +36,7 @@
   "subspecs": [
     {
       "name": "IIDatePickerView",
-      "source_files": "IIComponents/Classes/IIDatePickerView/*{h,m,swift}",
-      "resources": "IIComponents/Classes/IIDatePickerView/*.xib",
-      "private_header_files": "IIComponents/Classes/IIDatePickerView/UIView+Extension.h"
+      "source_files": "IIComponents/Classes/IIDatePickerView/*{h,m,swift}"
     },
     {
       "name": "MoreTab",
