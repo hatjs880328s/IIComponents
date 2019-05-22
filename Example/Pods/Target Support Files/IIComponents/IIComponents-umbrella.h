@@ -11,7 +11,6 @@
 #endif
 
 #import "NSDate+Extension.h"
-#import "UIView+Extension.h"
 #import "WSDatePickerView.h"
 
 FOUNDATION_EXPORT double IIComponentsVersionNumber;

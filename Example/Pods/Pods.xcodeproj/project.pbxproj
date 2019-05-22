@@ -43,7 +43,6 @@
 		542A6E865C9CF5EF356D153F94F69F42 /* NSDate+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = F2DCADE052899E19206CDB2E86EBADFE /* NSDate+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54B30CB2C254E24CAFF592C9DDC16D6C /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76F610BBD4899136EAF4B4303B790A /* ConstraintInsetTarget.swift */; };
 		568ECA9CE3DEA68351392597AA6574C5 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540992027C73963F01C9CA4685C7A754 /* ConstraintMaker.swift */; };
-		5D3F6EA637FE80210996620B523096E3 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8475BDFB759756AAE239B8B6B0963160 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E0D008E8A0A93F05F6080C9E121085D /* IIUIAndBizConfig-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E01444646E1220CD645F6164BD31BD71 /* IIUIAndBizConfig-dummy.m */; };
 		65F87CFBDA2122AB299F1495D73167BB /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7144347E6C5BE64CF002D1AF16685FB1 /* ConstraintLayoutGuide+Extensions.swift */; };
 		6B5B9980102D43F1575E4E0DC06A6D00 /* III18N.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD56400A4123AE66DD902AF06A61D3C0 /* III18N.framework */; };
@@ -107,6 +106,7 @@
 		E2987B07BB362FD3A7EDF4096F81F6CE /* IIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBE32E947C22CC8F79301B6DBF152A /* IIColorExtension.swift */; };
 		E4134EA3D519AAF80EC4C8C857CF0C91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A68E7D808E2C1E385CAE03C8007150 /* Foundation.framework */; };
 		E5B900D2622B21B62E3729B961342C9F /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEB400AC1EBF1BE7A175D79554F0155 /* ConstraintInsets.swift */; };
+		E78F8CAA17DCC6D8E32279134388AE00 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8475BDFB759756AAE239B8B6B0963160 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E7E096EE07C7FBF5B8201DB7B2DF3F6B /* IIComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7761031ACAE86D96CE28D0EE0079F5 /* IIComponents-dummy.m */; };
 		E85E71316F3C8870DB84B90EE909DD57 /* IICalendarAuthRuequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB94EC24C67D86786E5F55E176BAA3 /* IICalendarAuthRuequest.swift */; };
 		E9DE1310F69C55BA865DA52AAE74AA16 /* IITaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42218DDBAC75D762A40F860E0E41AADD /* IITaskModel.swift */; };
@@ -904,7 +904,7 @@
 			files = (
 				B0F38F85C8640FAB4EB5599F6193D9A6 /* IIComponents-umbrella.h in Headers */,
 				542A6E865C9CF5EF356D153F94F69F42 /* NSDate+Extension.h in Headers */,
-				5D3F6EA637FE80210996620B523096E3 /* UIView+Extension.h in Headers */,
+				E78F8CAA17DCC6D8E32279134388AE00 /* UIView+Extension.h in Headers */,
 				A02DE35FB7D767D04BFF6493015352C6 /* WSDatePickerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
