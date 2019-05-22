@@ -11,7 +11,7 @@ import IIUIAndBizConfig
 import SnapKit
 @_exported import IISwiftBaseUti
 
-class CustomMoreTabVCell: UITableViewCell {
+public class CustomMoreTabVCell: UITableViewCell {
     //图片
     var titleIcon: UIImageView!
     //文字

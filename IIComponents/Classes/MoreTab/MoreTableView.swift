@@ -9,29 +9,29 @@
 import UIKit
 import IIUIAndBizConfig
 
-protocol MoreTableProtocol: NSObjectProtocol {
+public protocol MoreTableProtocol: NSObjectProtocol {
     func progress(index: Int)
 }
 
 /// 自定义弹出tableview ----使用方式：  只要定义他的origin即可，也可以受用snp定义他的 origin---然后顺序添加闭包到tapactions数组,如果要用 snp布局，则需要设置 width = 130  &  height = 30 + 40 * datalist.count
-class MoreTableView: UIView, UITableViewDelegate, UITableViewDataSource {
+public class MoreTableView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     //文字列表
-    var dataListName = NSMutableArray()
+    public var dataListName = NSMutableArray()
     //图片列表
-    var dataListImage = NSMutableArray()
+    public var dataListImage = NSMutableArray()
     //背景图片
-    var backGroundImageView = UIImageView()
+    public var backGroundImageView = UIImageView()
     //当前也的tableview
-    var myTableView: UITableView!
+    public var myTableView: UITableView!
     //遮蔽层
-    var bigBGGrayView = UIView()
+    public var bigBGGrayView = UIView()
     //处理事件代理方法
-    weak var del: MoreTableProtocol?
+    public weak var del: MoreTableProtocol?
     /// 对外暴露 - cell背景颜色
-    var cellBgColor: UIColor = UIColor.white
+    public var cellBgColor: UIColor = UIColor.white
     /// 对外暴露 - cell tint color
-    var cellTintColor: UIColor = APPUIConfigX.mainCharColor
+    public var cellTintColor: UIColor = APPUIConfigX.mainCharColor
     
     /// 使用方式：只要定义他的origin即可，也可以受用snp定义他的 origin---然后顺序添加闭包到tapactions数组,如果要用 snp布局，则需要设置 width = 130  &  height = 30 + 40 * datalist.count
     ///
@@ -39,7 +39,7 @@ class MoreTableView: UIView, UITableViewDelegate, UITableViewDataSource {
     ///   - frame: 无意义
     ///   - dataList: 文字数组
     ///   - imageList: 图片名字数组
-    init(frame: CGRect, dataList: NSMutableArray, imageList: NSMutableArray, allWidth: Int = 150) {
+    public init(frame: CGRect, dataList: NSMutableArray, imageList: NSMutableArray, allWidth: Int = 150) {
         super.init(frame: frame)
         self.dataListImage = imageList
         self.dataListName = dataList
@@ -73,22 +73,22 @@ class MoreTableView: UIView, UITableViewDelegate, UITableViewDataSource {
         myTableView.separatorStyle = .none
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataListName.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = CustomMoreTabVCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "noreuse")
         cell.selectionStyle = .none
         cell.setInfo(image: UIImage(named: "\(dataListImage[indexPath.row])")!, titleInfo: "\(dataListName[indexPath.row])", tintColor: self.cellTintColor, bgColor: self.cellBgColor)
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //执行每个cell的点击事件
         del?.progress(index: indexPath.row)
         //隐藏这个TABLE
@@ -98,7 +98,7 @@ class MoreTableView: UIView, UITableViewDelegate, UITableViewDataSource {
     /**
      显示自己--添加一个遮蔽层
      */
-    func showSelf() {
+    public func showSelf() {
         if self.superview != nil {
             bigBGGrayView.isHidden = false
             bigBGGrayView.frame = CGRect(x: 0, y: 0, width: APPUIConfigX.aWeight, height: APPUIConfigX.aHeight)
@@ -119,7 +119,7 @@ class MoreTableView: UIView, UITableViewDelegate, UITableViewDataSource {
     /**
      隐藏自己
      */
-    func hidenSelf() {
+    public func hidenSelf() {
         UIView.animate(withDuration: 0.3, animations: {[weak self]  in
             self?.bigBGGrayView.isHidden = true
             self?.alpha = 0

@@ -15,11 +15,11 @@ import IIUIAndBizConfig
  主要是对一些颜色以及样式的二次开发，以符合Inspur工程项目集成的要求
  ：）
  */
-class IIDatePicker: NSObject {
+public class IIDatePicker: NSObject {
     
-    var ins: WSDatePickerView?
+    public var ins: WSDatePickerView?
     
-    init(haveMinDate: Bool = false, each10MinsProgress: Bool = false, scrollDate: Date!, type: WSDateStyle, endAction:@escaping (_ dateInfo: Date?) -> Void) {
+    public init(haveMinDate: Bool = false, each10MinsProgress: Bool = false, scrollDate: Date!, type: WSDateStyle, endAction:@escaping (_ dateInfo: Date?) -> Void) {
         super.init()
         let picker = WSDatePickerView(dateStyle: type, each10MinsProgress: each10MinsProgress, scrollTo: scrollDate) { (date) in
             endAction(date)
@@ -35,7 +35,7 @@ class IIDatePicker: NSObject {
         self.ins = picker
     }
     
-    func show() {
+    public func show() {
         self.ins?.show()
     }
     
