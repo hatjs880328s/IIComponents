@@ -31,7 +31,7 @@ public class MoreTableView: UIView, UITableViewDelegate, UITableViewDataSource {
     /// 对外暴露 - cell背景颜色
     public var cellBgColor: UIColor = UIColor.white
     /// 对外暴露 - cell tint color
-    public var cellTintColor: UIColor = APPUIConfigX.mainCharColor
+    public var cellTintColor: UIColor = APPUIConfig.mainCharColor
     
     /// 使用方式：只要定义他的origin即可，也可以受用snp定义他的 origin---然后顺序添加闭包到tapactions数组,如果要用 snp布局，则需要设置 width = 130  &  height = 30 + 40 * datalist.count
     ///
@@ -101,7 +101,7 @@ public class MoreTableView: UIView, UITableViewDelegate, UITableViewDataSource {
     public func showSelf() {
         if self.superview != nil {
             bigBGGrayView.isHidden = false
-            bigBGGrayView.frame = CGRect(x: 0, y: 0, width: APPUIConfigX.aWeight, height: APPUIConfigX.aHeight)
+            bigBGGrayView.frame = CGRect(x: 0, y: 0, width: APPUIConfig.aWeight, height: APPUIConfig.aHeight)
             bigBGGrayView.alpha = 0.1
             bigBGGrayView.backgroundColor = UIColor.white
             bigBGGrayView.tapActionsGesture({ [weak self] in

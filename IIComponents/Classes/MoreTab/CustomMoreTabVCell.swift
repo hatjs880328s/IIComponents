@@ -31,7 +31,7 @@ public class CustomMoreTabVCell: UITableViewCell {
         }
         titletext = UILabel()
         self.addSubview(titletext)
-        titletext.font = APPUIConfigX.uiFont(with: 16)
+        titletext.font = APPUIConfig.uiFont(with: 16)
         titletext.snp.makeConstraints { (make) in
             make.left.equalTo(titleIcon.snp.right).offset(15)
             make.centerY.equalTo(self.snp.centerY)
@@ -39,7 +39,7 @@ public class CustomMoreTabVCell: UITableViewCell {
             make.height.equalTo(20)
         }
         
-        titletext.textColor = APPUIConfigX.mainCharColor
+        titletext.textColor = APPUIConfig.mainCharColor
         //titletext.textAlignment = .center
         //line
         let line = UIView()
@@ -50,7 +50,7 @@ public class CustomMoreTabVCell: UITableViewCell {
             make.bottom.equalTo(0)
             make.height.equalTo(0.5)
         }
-        line.backgroundColor = APPUIConfigX.customListSepLineColor
+        line.backgroundColor = APPUIConfig.customListSepLineColor
     }
     
     /// 设置信息
